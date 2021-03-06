@@ -1,5 +1,6 @@
 html, body, #___gatsby {
-    height: 98%;
+    padding: 0;
+    height: 100%;
     margin: 0px;
 }
 
@@ -8,6 +9,6 @@ body {
 }
 
 #gatsby-focus-wrapper {
-    height: 98%;
+    height: 100%;
     margin: 0px;
 }

@@ -5,8 +5,10 @@ import './button.css';
 import './popup.css';
 import rec from "./../images/images_png/recieve_req.png";
 import x_but from "./../images/images_png/x_but.png";
+import { useEffect } from "react";
 
-export default function popup() {
+export default function Popup() {
+    useEffect(() => { document.body.style.backgroundColor = '#EFF0F6' }, [])
     return (
         <div id='mainBar2'  style={{
             backgroundColor: '#EFF0F6',

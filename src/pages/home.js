@@ -4,7 +4,9 @@ import 'fontsource-poppins';
 import './button.css';
 import logo from "./../images/skynet.png";
 
-const homePage = () => {
+import { useEffect } from "react";
+const HomePage = (props) => {
+    useEffect(() => { document.body.style.backgroundColor = 'white' }, [])
     return (
         <main style={{ width: '100%', height: '100%', margin: 0, padding: 0, top: 0 }}>
             <title>Sky-net</title>
@@ -27,4 +29,4 @@ const homePage = () => {
 }
 
 
-export default homePage;
+export default HomePage;
