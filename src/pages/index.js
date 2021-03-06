@@ -89,6 +89,12 @@ export default function Home() {
       <div>
         <Link to="/information-feed/" style={pageStyles}>INFORMATION FEED</Link>
       </div>
+      <div>
+        <Link to="/request-help/">REQUEST HELP</Link>
+      </div>
+      <div>
+        <Link to="/chat/">CHAT WITH EMERGENCY SERVICES</Link>
+      </div>
     </main>
   )
 }
