@@ -20,7 +20,7 @@ button:active {
     max-width: 30em;
     width: 60%;
     min-height: 500;
-    height: 90%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
