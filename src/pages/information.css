@@ -1,0 +1,12 @@
+#header {
+    color: #F4B740;
+    font-family: poppins, sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+}
+#firstst {
+    margin-top: auto;
+    flex: 0;
+    width: 50%;
+    background-color: #F4B740;
+}
