@@ -1,5 +1,5 @@
 import * as React from "react";
-import { navigate } from "gatsby";
+import { navigate, Link } from "gatsby";
 import 'fontsource-poppins';
 import './button.css';
 import logo from "./../images/skynet.png";
@@ -93,11 +93,8 @@ export default function Home() {
         <Link to="/request-help/">REQUEST HELP</Link>
       </div>
       <div>
-        <Link to="/chat/">CHAT WITH EMERGENCY SERVICES</Link>
+        <Link to="/chat/" onClick={console.log("help")}>CHAT WITH EMERGENCY SERVICES</Link>
       </div>
     </main>
   )
 }
-
-
-export default homePage;
