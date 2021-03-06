@@ -20,14 +20,12 @@ chatClient.connectUser(
 );
 
 const channel = chatClient.channel('livestream', 'spacex', {
-  image: 'https://goo.gl/Zefkbx',
+  image: 'https://www.pngkey.com/png/detail/904-9041238_emergency-lighting-fake-news-channel-logo.png',
   name: 'Emergency Messaging',
 });
 
 const MyChat = () => (
-    
   <Chat client={chatClient} theme='livestream light'>
-      
     <Channel channel={channel} Message={MessageLivestream}>
       <Window hideOnThread>
         <ChannelHeader live />
