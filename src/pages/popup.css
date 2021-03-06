@@ -1,0 +1,31 @@
+
+#red {
+    margin-top: auto;
+    flex: 0.30;
+    width: 110%;
+    background-color: #EA347F;
+}
+
+#x{ 
+    margin-top: 50;
+    flex:0;
+}
+
+#rec{
+    margin-top:100px;
+    flex: 0;
+}
+
+#mainBar2{
+    margin: 2% auto;
+    margin-top: 5%;
+    max-width: 30em;
+    width: 60%;
+    min-height: 500;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
