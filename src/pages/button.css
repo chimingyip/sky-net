@@ -39,3 +39,76 @@ button:active {
     background-color: #2EC8EC;
     flex: 2;
 }
+
+/* all of this is in the global selector scope so I am going to use this file */
+
+.left-aligned {
+    justify-self: left;
+    align-self: flex-start;
+}
+
+.request-help-header {
+    /* font-size: medium; */
+    color: #4E4B66;
+    font-family: Poppins, sans-serif;
+    margin-bottom: 0;
+}
+#request-helpTitle {
+    color: #EA347F;
+    font-family: poppins, sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+
+}
+
+#request-help-location {
+    color: #A0A3BD;
+    margin-top: 0;
+    padding-left: 0.5em;
+}
+.request-help-name-input {
+    background-color: #EFF0F6;
+    border: 0 none black;
+    padding: 0.2em 0.4em;
+    font-size: medium;
+    font-family: Poppins, sans-serif;
+    border-radius: 0.5em;
+    width: fill-available;
+}
+.request-help-name-input:active, .request-help-name-input:focus {
+    /* border-radius: 0.5em; */
+    outline: none;
+    box-shadow: 0 0 3px 0 #4E4B66;
+}
+textarea.request-help-name-input {
+    padding: 0.4em;
+    flex: 2;
+}
+
+#request-help-call {
+    width: 20vw;
+    height: 20vw;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    max-width: 8em;
+    max-height: 8em;
+    /* height: fit-content; */
+    background-color: #EFF0F6;
+    border-radius: 50%;
+}
+#request-help-call:active {
+    box-shadow: 0 0 3px 0 #4E4B66;
+}
+#request-help-call > img {
+    width: 50%;
+    pointer-events: none;
+    transform: translate(50%, 50%);
+    /* margin: auto; */
+    
+}
+#secondnd {
+    background-color: #EA347F;
+    margin-top: auto;
+    padding: 0.5em 0em;
+
+}

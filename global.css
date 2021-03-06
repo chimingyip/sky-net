@@ -2,6 +2,7 @@ html, body, #___gatsby {
     padding: 0;
     height: 100%;
     margin: 0px;
+    top: 0em;
 }
 
 body {
