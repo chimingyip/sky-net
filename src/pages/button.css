@@ -16,17 +16,17 @@ button:active {
 #mainBar {
     /* background-color: rgba(255, 0, 0, 0.3); */
     margin: 0 auto;
-    padding: 5% 0;
     max-width: 30em;
     width: 60%;
     min-height: 500;
-    height: 90%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 #first {
+    margin-top: 5vh;
     background-color: #F4B740;
     flex: 1;
 }
@@ -49,16 +49,17 @@ button:active {
 
 .request-help-header {
     /* font-size: medium; */
-    color: #4E4B66;
+    color: #4E4B66; 
     font-family: Poppins, sans-serif;
     margin-bottom: 0;
 }
 #request-helpTitle {
+    padding-top: 1em;
     color: #EA347F;
     font-family: poppins, sans-serif;
     font-weight: bold;
     font-size: x-large;
-
+    margin-top: 0;
 }
 
 #request-help-location {
@@ -99,6 +100,9 @@ textarea.request-help-name-input {
 #request-help-call:active {
     box-shadow: 0 0 3px 0 #4E4B66;
 }
+/* #request-help-call:checked {
+    background-color: #EA4335;
+} */
 #request-help-call > img {
     width: 50%;
     pointer-events: none;
@@ -110,5 +114,4 @@ textarea.request-help-name-input {
     background-color: #EA347F;
     margin-top: auto;
     padding: 0.5em 0em;
-
 }

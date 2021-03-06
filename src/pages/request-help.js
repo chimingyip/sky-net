@@ -9,16 +9,18 @@ import './button.css';
 // import audio from "./../images/images_png/send_audio.png";
 import phone from "./../images/phone_in_talk_24px_outlined.png";
 
-export default function RequestHelp() {
+export default function RequestHelp(props) {
+    const [name, setName] = React.useState(props.location.state.name ? props.location.state.name : '');
+    const [status, setStatus] = React.useState(props.location.state.status ? props.location.state.status : '')
     return (
         <div id='mainBar'>
             <h1 id='request-helpTitle' style={{marginBottom: 'auto'}}>Submit Request</h1>
             <h3 className='left-aligned request-help-header'>Name</h3>
-            <input className='left-aligned request-help-name-input' type='text' name='name'></input>
+            <input className='left-aligned request-help-name-input' type='text' name='name' value={name} onChange={e => setName(e.target.value)}></input>
             <h3 className='left-aligned request-help-header'>Location</h3>
             <p className='left-aligned request-help-header' id='request-help-location'>37.5084° S, 145.7474° E</p>
             <h3 className='left-aligned request-help-header'>Status</h3>
-            <textarea className='left-aligned request-help-name-input' name='status' placeholder='Type your status...'></textarea>
+            <textarea className='left-aligned request-help-name-input' name='status' placeholder='Type your status...' value={status} onChange={e => setStatus(e.target.value)}></textarea>
             <h3 className='left-aligned request-help-header'>Send audio message</h3>
             <div id='request-help-call'><img src={phone}/></div>
             {/* <input className='left-aligned request-help-name-input' type='' name='name'></input> */}
@@ -27,7 +29,7 @@ export default function RequestHelp() {
             {/* <img src={stat} width='100%' id='name' ></img> */}
             {/* <img src={audio} width='100%' id='name' ></img> */}
 
-            <button id='secondnd'  onClick={() => navigate('/')}>
+            <button id='secondnd'  onClick={() => navigate('/popup', {state:{'name': name, 'status': status}})}>
                 REQUEST HELP
                 </button>
             {/* <Link to="/">HOME</Link> */}

@@ -21,7 +21,7 @@ const HomePage = (props) => {
                 <button id='third' onClick={() => navigate('chat')}>
                     CHAT WITH EMERGENCY SERVICES
                 </button>
-                <img src={logo} width='50%' style={{ marginTop: 'auto'}}/>
+                <img src={logo} width='50%' style={{ marginTop: 'auto', marginBottom: '5em'}}/>
                 {/* <p style={{margin: 0}}>hello</p> */}
             </div>
         </main>
