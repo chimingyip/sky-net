@@ -1,10 +1,9 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-export default function InformationFeed() {
+export default function RequestHelp() {
     return (
         <div>
-            <h1>Hello World</h1>
             <Link to="/">HOME</Link>
         </div>
     )
