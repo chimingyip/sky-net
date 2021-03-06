@@ -1,0 +1,38 @@
+button {
+    border-radius: 1em;
+    color: white;
+    border: 0;
+    border-style: none;
+    margin-bottom: 2em;
+    width: 100%;
+    font-size: larger;
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+}
+button:active {
+    border-style: inset;
+}
+
+#mainBar {
+    background-color: rgba(255, 0, 0, 0.3);
+    margin: 2% auto;
+    max-width: 30em;
+    width: 60%;
+    min-height: 500;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#first {
+    background-color: #F4B740;
+    flex: 1;
+}
+#second {
+    background-color: #EA347F;
+    flex: 3;
+
+}
+#third {
+    background-color: #2EC8EC;
+    flex: 2;
+}
