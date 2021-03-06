@@ -19,7 +19,7 @@ chatClient.connectUser(
   userToken,
 );
 
-const channel = chatClient.channel('livestream', 'spacex', {
+const channel = chatClient.channel('livestream', 'emergency', {
   image: 'https://www.pngkey.com/png/detail/904-9041238_emergency-lighting-fake-news-channel-logo.png',
   name: 'Emergency Messaging',
 });
